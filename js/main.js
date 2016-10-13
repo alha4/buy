@@ -71,14 +71,16 @@ var smokeEffect = document.createElement("div"),
      }
    },false);
 
-   var videoProduct = document.querySelectorAll(".video-item");
+   var videoProduct = document.querySelectorAll(".playBtn");
 
    for(var i = 0; i < videoProduct.length; i++) {
+	videoProduct[i].addEventListener("click",function(e) {
        var player = document.createElement("iframe");
 	       player.classList.add("vp");
 		   player.frameBorder = "0";
-		   player.src = videoProduct[i].getAttribute("data-video");
-		   videoProduct[i].appendChild(player);
+		   player.src = e.target.getAttribute("data-video");
+		   e.target.parentNode.appendChild(player);
+     });
    }
    
    var IndexSlide = {},
