@@ -70,6 +70,16 @@ var smokeEffect = document.createElement("div"),
         toUp.style.display = 'none';
      }
    },false);
+
+   var videoProduct = document.querySelectorAll(".video-item");
+
+   for(var i = 0; i < videoProduct.length; i++) {
+       var player = document.createElement("iframe");
+	       player.classList.add("vp");
+		   player.frameBorder = "0";
+		   player.src = videoProduct[i].getAttribute("data-video");
+		   videoProduct[i].appendChild(player);
+   }
    
    var IndexSlide = {},
        nextButton = document.querySelectorAll('.nextBtn');
@@ -130,16 +140,13 @@ var smokeEffect = document.createElement("div"),
 	
 		setTimeout(function() {
 		   e.target.classList.remove("loading");
-		  
            parentNodePict.removeChild(currentPict);
-	       (parentNodePict.appendChild(picture)).classList.add('fadeIn');
-		
+	       (parentNodePict.appendChild(picture)).classList.add('fadeIn');	
 		},600);
-	     
-				
+			
 	}).catch(function(error) {
 		
-		 console.log(error);
+	   console.log(error);
 	});
    });
   }

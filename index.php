@@ -46,7 +46,7 @@
 </details>
 <div class="buy"><span>&#8381; 1541.93</span> <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&toolid=10041&campid=5337969842&customid=&lgeo=1&vectorid=229466&item=331983065876" target="_blank">Купить</a></div>
 </div>
-<div class="product">
+<div class="product video-item" data-video="https://www.youtube.com/v/FPkv4Gq_lSY">
 <div class="sliderBox">
 <a href="javascript:" class="nextBtn" id="sld_1" title="Ещё картинка"> </a><div hidden data-attr='["images\/49562b52d3__57.jpg","images\/b0ef50177b$_57.JPG","images\/d32f8f7abe$_57.JPG","images\/671e3792eb$_57.JPG","images\/7dced15eeb$_57.JPG","images\/253c4ffa21$_57.JPG","images\/dccca1216e__57.jpg"]'></div>
 <div class="slider">
